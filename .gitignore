@@ -1,0 +1,19 @@
+/vendor/
+/composer.lock
+.DS_Store
+.idea/
+.vscode/
+.phpunit.result.cache
+.phpunit.cache/
+.php-cs-fixer.cache
+.phpstan.cache
+*.log
+coverage.xml
+
+# Docker
+Dockerfile
+docker-compose.yml
+
+# internals
+docs/internals
+AGENTS.md

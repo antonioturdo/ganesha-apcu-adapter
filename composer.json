@@ -1,0 +1,35 @@
+{
+    "name": "zeusi/ganesha-apcu-adapter",
+    "description": "APCu storage adapter for Ganesha implementing the sliding time window Rate strategy",
+    "keywords": [
+        "ganesha",
+        "circuit-breaker",
+        "apcu",
+        "sliding-window",
+        "rate-limiting",
+        "fault-tolerance"
+    ],
+    "type": "library",
+    "license": "MIT",
+    "require": {
+        "php": ">=8.1",
+        "ext-apcu": "*",
+        "ackintosh/ganesha": "^3.0 || ^4.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^10.5",
+        "phpstan/phpstan": "^2.1",
+        "phpstan/phpstan-phpunit": "^2.0",
+        "friendsofphp/php-cs-fixer": "^3.95"
+    },
+    "autoload": {
+        "psr-4": {
+            "Zeusi\\GaneshaApcuAdapter\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Zeusi\\GaneshaApcuAdapter\\Tests\\": "tests/"
+        }
+    }
+}
